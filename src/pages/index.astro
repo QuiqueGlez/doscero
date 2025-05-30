@@ -1,4 +1,5 @@
 ---
+// src/pages/index.astro (tras la sección Hero)
 import Layout from '../layouts/Layout.astro';
 ---
 <Layout title="Doscero · Diseño Web & SEO" description="Agencia especialista en diseño web y SEO">
@@ -17,5 +18,38 @@ import Layout from '../layouts/Layout.astro';
       >Nuestros Servicios</a
     >
   </section>
-  <!-- Más secciones aquí… -->
+
+  <!-- SECCIÓN SERVICIOS -->
+  <section id="servicios" class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12">Nuestros Servicios</h2>
+      <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-2">
+        <!-- Servicio 1: Diseño Web -->
+        <div class="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition">
+          <!-- Icono (puedes reemplazar por SVG propio) -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-primary mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 21l3-1.5L15 21l-.75-4M5.5 9.5L4 17h16l-1.5-7.5M6 2h12l1 4H5l1-4z" />
+          </svg>
+          <h3 class="text-2xl font-semibold mb-2">Diseño Web</h3>
+          <p class="text-gray-600">
+            Creamos sitios web modernos, responsive y optimizados para convertir visitantes en clientes.
+          </p>
+        </div>
+
+        <!-- Servicio 2: SEO -->
+        <div class="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition">
+          <!-- Icono (puedes reemplazar por SVG propio) -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-primary mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m4-2h-6m8 2h-1v-2a4 4 0 00-4-4H9m6 10v2a4 4 0 01-4 4H9a4 4 0 01-4-4v-2h12z" />
+          </svg>
+          <h3 class="text-2xl font-semibold mb-2">SEO</h3>
+          <p class="text-gray-600">
+            Implementamos estrategias SEO on-page y off-page para mejorar tu visibilidad y tráfico orgánico.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Aquí podrás seguir con Proyectos, Contacto… -->
 </Layout>
