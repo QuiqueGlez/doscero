@@ -1,16 +1,21 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Doscero · Diseño Web & SEO" description="Agencia especialista en diseño web y SEO">
+  <!-- SECCIÓN HERO -->
+  <section
+    id="inicio"
+    class="min-h-screen flex flex-col items-center justify-center bg-white px-4 text-center"
+  >
+    <h1 class="text-5xl font-extrabold mb-4">Bienvenido a Doscero</h1>
+    <p class="text-xl text-gray-600 mb-8">
+      Diseño web profesional y soluciones SEO que impulsan tu negocio.
+    </p>
+    <a
+      href="#servicios"
+      class="px-6 py-3 bg-primary text-white rounded-lg hover:opacity-90 transition"
+      >Nuestros Servicios</a
+    >
+  </section>
+  <!-- Más secciones aquí… -->
+</Layout>

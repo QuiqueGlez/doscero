@@ -1,0 +1,40 @@
+---
+// src/layouts/Layout.astro
+import '../styles/global.css';
+const { title = 'Doscero · Diseño Web & SEO', description = '' } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.svg" />
+  </head>
+  <body class="font-sans text-gray-800 antialiased">
+    <!-- NAVBAR -->
+    <header class="bg-white shadow-md">
+      <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="/" class="text-2xl font-bold text-primary">Doscero</a>
+        <ul class="flex space-x-6">
+          <li><a href="#servicios" class="hover:text-primary transition">Servicios</a></li>
+          <li><a href="#proyectos" class="hover:text-primary transition">Proyectos</a></li>
+          <li><a href="#contacto" class="hover:text-primary transition">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- CONTENIDO -->
+    <main class="mt-8">
+      <slot />
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-100 mt-16 py-6">
+      <div class="max-w-6xl mx-auto px-4 text-center text-sm text-gray-600">
+        © {new Date().getFullYear()} Doscero. Todos los derechos reservados.
+      </div>
+    </footer>
+  </body>
+</html>
